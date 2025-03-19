@@ -35,7 +35,8 @@ exports.loginUser = async (req, res) => {
             return res.status(400).json({ message: 'Mot de passe incorrect' });
         }
 
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id, level: user.level, }, process.env.JWT_SECRET, { expiresIn: '1h' });
+
         res.json({ user, token, level: user.level }); // Renvoyer le niveau de l'utilisateur
     } catch (error) {
         res.status(500).json({ message: 'Erreur lors de la connexion' });

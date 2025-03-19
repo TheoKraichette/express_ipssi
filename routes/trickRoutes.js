@@ -8,7 +8,7 @@ const router = express.Router();
 router.post('/add', protect, addTricks);
 
 // Route pour récupérer les tricks par niveau
-router.get('/:level', getTricksByLevel);
+router.get('/:level', protect, getTricksByLevel);
 
 // Route pour ajouter ou mettre à jour un trick à un utilisateur
 router.route('/userTricks')
