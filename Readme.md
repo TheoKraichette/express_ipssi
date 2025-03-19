@@ -116,7 +116,7 @@ GET /api/tricks/:level
 **Exemple:**
 
 ```http
-GET /api/tricks/Debutant
+GET /api/tricks/Débutant
 ```
 
 **Réponse:**
