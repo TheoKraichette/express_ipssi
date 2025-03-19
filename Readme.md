@@ -2,7 +2,7 @@
 
 ## Description
 
-CheckTricks est une API permettant aux utilisateurs d'apprendre et de suivre leur progression sur des tricks de skateboard. Chaque utilisateur peut sélectionner des tricks, les marquer comme "En cours" ou "Maîtrisé", et progresser à travers plusieurs niveaux : Débutant, Confirmé et Expert.
+Ceci est une API back-end pour l'application CheckTricks permettant aux utilisateurs d'apprendre et de suivre leur progression sur des tricks de skateboard. Chaque utilisateur peut sélectionner des tricks, les marquer comme "En cours" ou "Maîtrisé", et progresser à travers plusieurs niveaux : Débutant, Confirmé et Expert.
 
 ## Installation
 
@@ -66,9 +66,9 @@ POST /api/users/register
 
 ```json
 {
-  "username": "skaterboy",
-  "email": "skaterboy@example.com",
-  "password": "password123"
+  "username": "Theo",
+  "email": "theo@theo.com",
+  "password": "coucou123"
 }
 ```
 
@@ -76,7 +76,7 @@ POST /api/users/register
 
 ```json
 {
-  "user": { "_id": "...", "username": "skaterboy", ... },
+  "user": { "_id": "...", "username": "Theo", ... },
   "token": "jwt_token"
 }
 ```
@@ -91,8 +91,8 @@ POST /api/users/login
 
 ```json
 {
-  "email": "skaterboy@example.com",
-  "password": "password123"
+  "email": "theo@theo.com",
+  "password": "coucou123"
 }
 ```
 
@@ -100,7 +100,7 @@ POST /api/users/login
 
 ```json
 {
-  "user": { "_id": "...", "username": "skaterboy", ... },
+  "user": { "_id": "...", "username": "Theo", ... },
   "token": "jwt_token"
 }
 ```
@@ -181,10 +181,7 @@ Authorization: Bearer jwt_token
 
 ## Remarque
 
-- Assurez-vous que MongoDB est en cours d'exécution.
-- Pour visualiser la base de données, utilisez **MongoDB Compass** ou **Robo 3T**.
-- Vous pouvez insérer manuellement des tricks avec un outil comme Compass.
-
+- Assurez-vous que MongoDB est en cours d'exécution sur votre serveur node.
 ---
 
 Projet CheckTricks - 2025 🚀
